@@ -5,8 +5,8 @@ This project includes **request body parsing**, **input validation**, and **safe
 
 ---
 ## 📂 Project Structure
-```
-express-postgresql-insert-api
+```js
+Express-postgresql-insert-api
 │
 ├── db.js # PostgreSQL connection pool
 ├── update.js # Express server & API routes
@@ -14,7 +14,7 @@ express-postgresql-insert-api
 └── README.md
 ```
 ## ⚙️ Configure the PostgreSQL connection pool (`db.js`)
-```
+```js
 const { Pool } = require('pg');
 const pool = new Pool({
    user: 'your_username',
@@ -29,7 +29,7 @@ const pool = new Pool({
 ```
 ## Create Your Express Server
 Create a file: update.js
-```
+```js
 // update.js
 const express = require('express');
 const { body, validationResult } = require('express-validator');    //insert validation
@@ -91,13 +91,13 @@ app.put('/upemployeById', [
 ### 🔹 Test API
 GET /
 #### Response:
-```
+```js
 <h1>EXPRESS JS API</h1>
 ```
 ### 🔹 Update Employee (Without Validation)
 PUT /upemploye
 #### Request Body:
-```
+```js
 {
   "id": 1,
   "mobile": "9876543210",
@@ -107,7 +107,7 @@ PUT /upemploye
 ### 🔹 Update Employee (With Validation)
 PUT /upemployeById
 #### Request Body:
-```
+```js
 {
   "id": 1,
   "mobile": "9999999999",
@@ -118,7 +118,7 @@ PUT /upemployeById
 - id is required
 - mobile is required
 - name is required
-```
+```js
 Success Response
 {
   "status": "success",
