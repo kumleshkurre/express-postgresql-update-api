@@ -141,6 +141,13 @@ Error Response (ID Not Found)
   ]
 } 
 ```
+## 🎯 Learning Outcomes
+- Handling PUT requests in Express.js
+- Updating records in PostgreSQL
+- Input validation using express-validator
+- Checking record existence before update
+- Writing secure SQL queries
+  
 ## 👨‍💻 Author
 
 - Kumlesh Kurre
