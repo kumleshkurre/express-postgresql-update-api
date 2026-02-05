@@ -130,6 +130,7 @@ Error Response (ID Not Found)
   "status": "failed",
   "message": "update failed"
 }
+Error Response
 {
   "errors": [
     {
